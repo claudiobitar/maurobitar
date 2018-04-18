@@ -1,0 +1,39 @@
+•••• React:
+
+app
+
+componente para o header, 
+parte direita,
+navegação
+e footer
+ 
+quando clica em cada 1
+chama outros componentes:
+
+biografia, portfólio
+
+O componente PortfolioMenu pega os dados do JSON
+e passa para os componentes filhos:
+
+casas
+interiores
+móveis
+estudos
+cronologia
+
+***Todos acima feitos
+
+- Resolver o NavLink e activeClass
+*** Feito
+
+- Css da Estrutura
+
+- Colocar o preloader apontando para
+o ícone do font-awesome
+
+- Paginação dos Conteúdos
+
+- Organizar o css das galerias
+de acordo com o conteúdo e número de itens
+
+- Ajustar o canvas das linhas decorativas

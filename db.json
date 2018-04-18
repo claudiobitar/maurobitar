@@ -1,0 +1,52 @@
+{
+  "casas": [
+    {
+      "id": "1",
+      "nome": "casa1",
+      "descricao": "descrição da casa 1",
+      "fotos": [      
+          "foto_casa1_1", "foto_casa1_2", "foto_casa1_3"       
+       ]
+    },
+    {
+      "id": "2",
+      "nome": "casa2",
+      "descricao": "descrição da casa 2",
+      "fotos": ["foto_casa2_1", "foto_casa2_2", "foto_casa2_3"]
+    },
+    {
+      "id": "3",
+      "nome": "casa3",
+      "descricao": "descrição da casa 3",
+      "fotos": ["foto_casa3_1", "foto_casa3_2", "foto_casa3_3"]
+    }
+  ],
+  "interiores": [
+    {
+      "texto": "Texto introdutorio aqui sobre Interiores, texto introdutorio aqui sobre Interiores, texto introdutorio aqui sobre Interiores, texto introdutorio aqui sobre Interiores",
+      "fotos": ["foto_interiores_1", "foto_interiores_2", "foto_interiores_3", 
+                "foto_interiores_4", "foto_interiores_5", "foto_interiores_6",
+                "foto_interiores_7", "foto_interiores_8", "foto_interiores_9",
+                "foto_interiores_10", "foto_interiores_11", "foto_interiores_12",
+                "foto_interiores_13"
+               ]
+    }
+  ],
+  "moveis": [
+    {
+      "texto": "Texto introdutorio aqui sobre Móveis, texto introdutorio aqui sobre Móveis, texto introdutorio aqui sobre Móveis, texto introdutorio aqui sobre Móveis",
+      "fotos": ["foto_moveis_1", "foto_moveis_2", "foto_moveis_3"]
+    }
+  ],
+  "estudos": [
+    {
+      "texto": "Texto introdutorio aqui sobre Estudos, texto introdutorio aqui sobre Estudos, texto introdutorio aqui sobre Estudos, texto introdutorio aqui sobre Estudos",
+      "fotos": ["foto_estudos_1", "foto_estudos_2", "foto_estudos_3"]
+    }
+  ],
+  "cronologia": [
+    {     
+      "listaProjetos": ["projeto_1", "projeto_2", "projeto_3", "projeto_4", "projeto_5","projeto_6"]
+    }
+  ]
+}
