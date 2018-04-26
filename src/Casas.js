@@ -9,13 +9,7 @@ const URL_CASAS = 'http://localhost:3001/casas';
 class Casas extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      casas: []  ,   
-      activePage: 1,
-      itemPerPage: 3,     
-      casasDuplicadas: [] 
-   }
-   this.handlePageChange = this.handlePageChange.bind(this) 
+   
    
   }
 
@@ -28,57 +22,8 @@ class Casas extends Component {
       })
   }
   */
-
- componentDidMount() {
-  let d = '';
-  $.get(URL_CASAS, function (data) {
-      d = data;
-      this.setState({
-          projectList: d,
-          originalProjectList: d
-      });
-  }.bind(this));
-}
-
-handlePageChange(pageNumber) {
-  this.setState({ activePage: pageNumber });
-}
-
-
-  render() {
-
-    const { projectList, activePage, itemPerPage } = this.state;
-
-    const indexOfLastTodo = activePage * itemPerPage;
-    const indexOfFirstTodo = indexOfLastTodo - itemPerPage;
-    const renderedProjects = projectList.slice(indexOfFirstTodo, indexOfLastTodo);
-
-   
-    return (
-      <div>
-        {this.state.casas.map(item =>
-          <div>
-            <h2>{item.nome}</h2>
-            <p>{item.descricao}</p>
-            <ul>
-              {
-                item.fotos.map(foto => <li>{foto}</li>)
-              }
-            </ul>
-            <Pagination
-          activePage={this.state.activePage}
-          itemsCountPerPage={this.state.itemPerPage}
-          totalItemsCount={this.state.originalProjectList.length}
-          pageRangeDisplayed={5}
-          onChange={this.handlePageChange.bind(this)}
-      />
-
-          </div>
-          
-        )}
-         
-      </div>
-    )
+  render(){
+    return <p>Componente Casas</p>
   }
 }
 

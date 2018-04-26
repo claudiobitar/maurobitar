@@ -1,79 +1,122 @@
-html {
-  background-color: #333333; 
+* {
+  border:0;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
 }
 
-body {
-  margin: 0;
-    padding: 0;
-    text-align: center; /* !!! */  
+html {  
+  background:#333333;   
 }
 
 a {
- text-decoration: none; 
- color: #333333;
-}
-
-a:visited {
-  color:none;
+  color:blue;
+  text-decoration:none;
 }
 
 .active {
-  color: white;
+  color:rgb(29, 28, 28);
+}
+
+h1 {
+ font-weight:normal; 
+ font-size:42px;
+ color: #333333;
+ line-height:25px;
+ padding-top:30px;
+ padding-left:50px; 
+}
+
+small {
+color:#B0B0B0;
+font-size:24px;
+letter-spacing: 5px;
+margin-left:40px;
+}
+
+#canvas {
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index:0;        
+}
+
+.wrapper-all {
+ display:flex;
+ flex-direction:row;
+ text-align:left;
+ justify-content: center;
+ margin-top: 125px;
+ z-index:1 !important;
+ position: relative;
 }
 
 .wrapper {
-  margin: 0 auto;
-  margin-top:123px;
-  text-align: left;
-  height: 600px;
-  width: 960px;
   background-color:#7E7E7E;
+  height:600px;
+  margin:123px auto 0;
+  text-align:left;
+  width:563;
 }
 
 .header {
-  background: green url(images/col1_esq.gif);
-  height: 124px;
+  background:url("images/col1_esq.gif") green;
+  border-bottom:2px solid black;
+  height:124px;
+  width:766px;
+}
+.coluna2 {  
+  width:195px;
   
 }
-
-
+.coluna2 .parte-superior {
+  background:url(images/col2_dir.gif);
+  border-left:2px solid black;
+  border-bottom:2px solid black;
+  height:124px;
+}
+.coluna2 .parte-inferior {
+  background:url(images/col4_dir.gif);
+  height:486px;
+  border-left:2px solid black;
+}
 .wrapper2 {
   display:flex;
-  flex-direction: row;
- 
+  flex-direction:row;
 }
-
-
-.menu-principal {  
-  
-  height: 100%;
-  width: 200px;
-  height: 476px;
+.menu-principal {
+  background-color:green; 
+  height:486px;
+  text-align:left;
+  width:160px;
+  background-image:url("images/col3_esq.gif");  
 }
 
 .page-content {
-  width: 700px;  
   background-color:aqua;
-  
+  height:486px;
+  width:606px;
 }
-
 .home {
-  background: url(images/col3_esq.gif);
-  height:400px;
+  background:url("images/col3_esq.gif");
+  height:100%;
+  background-position: -159px 0;
 }
-
-.portfolio-menu { 
- background: blue; 
+.portfolio-menu {
+  background:blue;
 }
-
 .wrapper-portfolio {
   background:orange;
-  width:700px;
+  width:500px;
 }
-
-
 .footer {
-  color: white;  
-  background: green; 
+  color:white;
   float:right;
 }

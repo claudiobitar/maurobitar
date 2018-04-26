@@ -1,10 +1,22 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+
+import Home from './Home'
 
 const Header = (props) => {
   return (
     <div className="header">
-      <h1>Mauro Bitar <small>Arquiteto</small></h1>
-   </div>
+      <div>
+        <Router>
+          <div>
+            <Link className="home-link" exact to="/"><h1>Mauro Bitar<br />
+              <small>arquiteto</small></h1>
+            </Link>
+            <Route exact path='/' render={() => <Home />} />
+          </div>
+        </Router>
+      </div>
+    </div>
   )
 }
 
