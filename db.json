@@ -19,6 +19,12 @@
       "nome": "casa3",
       "descricao": "descrição da casa 3",
       "fotos": ["foto_casa3_1", "foto_casa3_2", "foto_casa3_3"]
+    },
+    {
+      "id": "4",
+      "nome": "casa nova inserida",
+      "descricao": "descrição da casa casa nova",
+      "fotos": ["foto_casa nova 1", "foto_casa3_2", "foto_casa3_3"]
     }
   ],
   "interiores": [
@@ -28,7 +34,7 @@
                 "foto_interiores_4", "foto_interiores_5", "foto_interiores_6",
                 "foto_interiores_7", "foto_interiores_8", "foto_interiores_9",
                 "foto_interiores_10", "foto_interiores_11", "foto_interiores_12",
-                "foto_interiores_13"
+                "foto_interiores_13_nova", "foto_interiores_13_nova", "foto_interiores_13_nova"
                ]
     }
   ],

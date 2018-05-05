@@ -19,22 +19,6 @@ a {
   color:rgb(29, 28, 28);
 }
 
-h1 {
- font-weight:normal; 
- font-size:42px;
- color: #333333;
- line-height:25px;
- padding-top:30px;
- padding-left:50px; 
-}
-
-small {
-color:#B0B0B0;
-font-size:24px;
-letter-spacing: 5px;
-margin-left:40px;
-}
-
 #canvas {
   padding: 0;
   margin: auto;
@@ -67,11 +51,32 @@ margin-left:40px;
 }
 
 .header {
-  background:url("images/col1_esq.gif") green;
+  background:url("images/col1_esq.gif"); 
   border-bottom:2px solid black;
   height:124px;
-  width:766px;
+  width:766px; 
 }
+
+.header h1 {
+  font-weight:normal; 
+  font-size:42px;  
+  line-height:25px;
+  padding-top:30px; 
+  text-align: center;
+  margin-left: -300px;
+ }
+ 
+ .header h1 a { 
+   text-align: center;
+   color: #333333;   
+ } 
+ 
+ .header h1 small {
+   color:#B0B0B0;
+   font-size:24px;
+   letter-spacing: 5px;
+ }
+
 .coluna2 {  
   width:195px;
   

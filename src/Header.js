@@ -9,9 +9,11 @@ const Header = (props) => {
       <div>
         <Router>
           <div>
-            <Link className="home-link" exact to="/"><h1>Mauro Bitar<br />
-              <small>arquiteto</small></h1>
-            </Link>
+            <h1>
+              <Link className="home-link" exact to='/'>Mauro Bitar<br />
+                <small>arquiteto</small>
+              </Link>
+            </h1>
             <Route exact path='/' render={() => <Home />} />
           </div>
         </Router>

@@ -38,33 +38,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <canvas id="canvas"></canvas>
-  <script>
-    const c = document.getElementById("canvas");
-    const lineH = c.getContext("2d");
-    const lineV = c.getContext("2d");
-    
-
-    const coluna2Position = document.querySelector('div').offsetLeft
-    //alert(coluna2Position )
-    
-    c.width = window.innerWidth;
-    c.height = window.innerHeight;
-
-    lineH.fillStyle = "grey";
-    lineH.fillRect(0, 50, window.innerWidth, 5);
-    lineH.fill();
-
-    lineV.fillStyle = "grey";
-    lineV.fillRect(300, 0, 5, window.innerHeight);
-    lineV.fill();
-
-    window.onresize = function () {
-      lineH.width = window.innerWidth;
-      lineV.height = window.innerHeight;
-    }
-
-  </script>
+  
 </body>
 
 </html>
