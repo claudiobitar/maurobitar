@@ -1,28 +1,22 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import {getInteriores} from './actions'
 
-const URL_INTERIORES = 'http://localhost:3001/interiores';
+
 
 class Interiores extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      interiores: []
-    }
-
-  }
 
   componentDidMount() {
-    axios.get(URL_INTERIORES)
-      .then(res => {
-        this.setState({ interiores: res.data })
-      })
+    this.props.getInteriores();
   }
 
   render() {
     return (
-      <div>
-        {this.state.interiores.map(item =>
+      <div>       
+        {/*
+        {interiores.map(item =>
           <div>
             <p>{item.texto}</p>
             <ul>
@@ -32,12 +26,23 @@ class Interiores extends Component {
             </ul>
           </div>
         )}
-      </div>
+      */}     
+      </div>    
     )
   }
 }
 
-export default Interiores;
+function mapStateToProps(state) {  
+  return {
+    interiores: state.interiores
+  }
+}
+
+function mapDispatchToProps(dispatch) { 
+  return bindActionCreators({ getInteriores }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Interiores);
 
 
 

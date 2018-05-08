@@ -18,10 +18,9 @@ const URL_INTERIORES = 'http://localhost:3001/interiores';
 
 export function getInteriores() {  
   
-  const request = axios.get(URL_INTERIORES)
-    .then(res => {
-      this.setState({ interiores: res.data}) 
-    }) 
+  const request = fetch(URL_INTERIORES , 
+  {method:'GET'})
+  .then(response => response.json())   
   
     return {
       type: 'GET_INTERIORES',

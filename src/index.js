@@ -6,9 +6,10 @@ import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import promiseMiddleware from 'redux-promise';
+//import axiosMiddleware from 'redux-axios-middleware';
 
 import reducers from './reducers'
-const createStoreWithMiddleware = applyMiddleware(promiseMiddleware)(createStore)
+const createStoreWithMiddleware = applyMiddleware(promiseMiddleware )(createStore)
 
 
 ReactDOM.render(
