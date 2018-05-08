@@ -34,8 +34,7 @@ class MenuPrincipal extends Component {
                 <li><NavLink onClick={this.handleOnClick} activeClassName="active" exact to="/portfolio">portfolio</NavLink></li>
               </ul>
             </nav>
-            <div className="page-content">
-              <Redirect from="/" to="/" />
+            <div className="page-content">             
               <Route exact path='/nota_biografica' render={() => <NotaBiografica />} />
               <Route exact path='/portfolio' render={() => <Portfolio />} />
               <Route exact path='/' render={() => <Home />} />

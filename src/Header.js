@@ -1,5 +1,9 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
+
+import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+import { showBGImage } from './actions';
 
 import Home from './Home'
 
@@ -10,8 +14,8 @@ const Header = (props) => {
         <Router>
           <div>
             <h1>
-              <Link className="home-link" exact to='/'>Mauro Bitar<br />
-                <small>arquiteto</small>
+              <Link onClick={showBGImage} className="home-link" exact to='/'>Mauro Bitar<br />
+                <small className="home-link">arquiteto</small>
               </Link>
             </h1>
             <Route exact path='/' render={() => <Home />} />
@@ -22,4 +26,18 @@ const Header = (props) => {
   )
 }
 
-export default Header
+function mapStateToProps(state){  
+  console.log(state) 
+  return{
+    isHome: state.isHome
+  }
+}
+
+function mapDispatchToProps(dispatch){
+  return bindActionCreators({showBGImage},dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
+
+
+
