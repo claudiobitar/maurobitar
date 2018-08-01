@@ -10,13 +10,29 @@ html {
   background:#333333;   
 }
 
-a {
-  color:blue;
+a {  
   text-decoration:none;
+  color:black; 
+}
+
+a:hover {
+  color:#5F5F5F;
+}
+
+p {
+  font-size: 14px;
+}
+
+li {
+  list-style:none;
 }
 
 .active {
-  color:rgb(29, 28, 28);
+ color: #929999;
+}
+
+.active-home {
+  color:#b8b9ba;
 }
 
 #canvas {
@@ -42,28 +58,32 @@ a {
  position: relative;
 }
 
-.wrapper {
+.wrapper, .menu-principal, .page-content {
   background-color:#7E7E7E;
+}
+
+.wrapper { 
   height:600px;
   margin:123px auto 0;
   text-align:left;
-  width:563;
+  /*width:563;*/
 }
 
 .header {
-  background:url("images/col1_esq.gif"); 
+  background:url("/images/col1_esq.gif"); 
   border-bottom:2px solid black;
   height:124px;
-  width:766px; 
+  /*width:766px;*/
+  width:830;  
 }
 
 .header h1 {
   font-weight:normal; 
   font-size:42px;  
   line-height:25px;
-  padding-top:30px; 
+  padding-top:36px; 
   text-align: center;
-  margin-left: -300px;
+  margin-left: -442px;
  }
  
  .header h1 a { 
@@ -82,13 +102,13 @@ a {
   
 }
 .coluna2 .parte-superior {
-  background:url(images/col2_dir.gif);
+  background:url("/images/col2_dir.gif");
   border-left:2px solid black;
   border-bottom:2px solid black;
   height:124px;
 }
 .coluna2 .parte-inferior {
-  background:url(images/col4_dir.gif);
+  background:url("/images/col4_dir.gif");
   height:486px;
   border-left:2px solid black;
 }
@@ -96,32 +116,103 @@ a {
   display:flex;
   flex-direction:row;
 }
-.menu-principal {
-  background-color:green; 
-  height:486px;
-  text-align:left;
-  width:160px;
-  background-image:url("images/col3_esq.gif");  
+
+.menu-principal, .nota-biografica, .portfolio, .contato {
+  padding-top:26px;
 }
 
-.page-content {
-  background-color:aqua;
+.menu-principal {  
   height:486px;
-  width:606px;
+  text-align:left; 
+  width:184px;
+  background-image:url("/images/col3_esq.gif");  
+  padding-left:40px;  
 }
+
+.page-content { 
+  height:486px;
+  /*width:606px;*/
+  width:581px;
+}
+
+.texto-intro {  
+  font-size:14px; 
+  margin-right:22px;
+  margin-left:35px;
+  text-align:justify;  
+}
+
+.texto-intro:first-letter {
+  font-weight: bold;
+}
+
 .home {
-  background:url("images/col3_esq.gif");
-  height:100%;
-  background-position: -159px 0;
+  background:url("/images/col3_esq.gif");
+  height:100%; 
+  background-position: -178px 0;  
 }
-.portfolio-menu {
-  background:blue;
+
+.nota-biografica {
+  display:flex;  
 }
-.wrapper-portfolio {
-  background:orange;
+
+.nota-biografica img { 
+  align-self:flex-start;  
+  width:236px; 
+  margin-top:5px; 
+}
+
+
+.wrapper-portfolio {  
   width:500px;
+  /*background-color:green;*/
 }
+
+.portfolio-menu {    
+  width:115px; 
+}
+
+.portfolio-menu li {
+  margin-bottom:  7px; 
+}
+
+.portfolio-intro { 
+  width:328px; 
+}
+
+.portfolio-intro .texto-intro {
+  text-align: left;
+}
+
+.cronologia { 
+  height:300px;  
+  margin-left:35px;  
+}
+
+.cronologia h3 {
+  margin-bottom:20px;
+  font-size:16px;
+}
+
+.cronologia-conteudo {
+ 
+ 
+}
+
 .footer {
   color:white;
-  float:right;
+  float:right; 
+  display:flex;
+  justify-content: center; 
+  width:194px;
 }
+
+.footer .area-texto {
+  margin-top:4px;
+  font-size:10px;
+  text-align:left;
+  line-height: 15px; 
+  color:grey; 
+}
+
+

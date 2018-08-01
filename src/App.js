@@ -6,11 +6,11 @@ import Coluna2 from './Coluna2'
 class App extends Component {
   constructor(props) {
     super(props)
-    this.drawCanvas = this.drawCanvas.bind(this)
+    this.drawCanvas = this.drawCanvas.bind(this)   
   }
 
 
-  drawCanvas() {
+  drawCanvas () {
 
     const c = document.getElementById("canvas");
     const lineH = c.getContext("2d");
@@ -45,6 +45,11 @@ class App extends Component {
 
   }
 
+  modalToggled(on) {
+    this.setState({modalOn: on});    
+  }
+
+
   componentDidMount() {
     this.drawCanvas()
   }
@@ -53,7 +58,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <canvas id="canvas"></canvas>
+        <canvas id="canvas"></canvas>       
         <div className="wrapper-all">
           <Coluna1 />
           <Coluna2 />

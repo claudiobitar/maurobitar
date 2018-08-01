@@ -14,11 +14,11 @@ const Header = (props) => {
         <Router>
           <div>
             <h1>
-              <Link onClick={showBGImage} className="home-link" exact to='/'>Mauro Bitar<br />
+              <Link onClick={showBGImage} className="home-link" to='/'>Mauro Bitar<br />
                 <small className="home-link">arquiteto</small>
               </Link>
             </h1>
-            <Route exact path='/' render={() => <Home />} />
+            {/*<Route exact path='/' render={() => <Home />} />*/}
           </div>
         </Router>
       </div>
