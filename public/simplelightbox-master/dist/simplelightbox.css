@@ -10,7 +10,7 @@ body.hidden-scroll {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #fff;
+  background: #000000bf;
   opacity: 0.7;
   display: none;
   z-index: 1050;
@@ -45,7 +45,7 @@ body.hidden-scroll {
   width: 44px;
   line-height: 44px;
   font-family: Arial, Baskerville, monospace;
-  color: #000;
+  color: white;
   font-size: 3rem;
 }
 /* line 69, ../sass/simplelightbox.scss */
@@ -79,7 +79,7 @@ body.hidden-scroll {
   display: block;
   z-index: 1060;
   font-family: Arial, Baskerville, monospace;
-  color: #000;
+  color: white;
 }
 /* line 99, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-navigation button.sl-next {

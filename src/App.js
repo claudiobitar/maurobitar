@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import Coluna1 from './Coluna1'
-import Coluna2 from './Coluna2'
-
+import Column1 from './Column1'
+import Column2 from './Column2'
+import FooterMobile from './FooterMobile'
 
 class App extends Component {
   constructor(props) {
     super(props)
-    this.drawCanvas = this.drawCanvas.bind(this)   
+    this.drawCanvas = this.drawCanvas.bind(this)
+    this.onResize = this.onResize.bind(this)
   }
 
 
-  drawCanvas () {
+  drawCanvas() {
 
     const c = document.getElementById("canvas");
     const lineH = c.getContext("2d");
@@ -20,10 +21,17 @@ class App extends Component {
 
     const lineColor = "grey"
 
+    let element = document.querySelector('div')
+
     const positionCanvas = () => {
       lineV.clearRect(0, 0, c.width, c.height);
-      const position1 = document.querySelector('.coluna2').offsetLeft
-      const position2 = document.querySelector('.parte-inferior').offsetTop + 124
+      let position1 = document.querySelector('.coluna2').offsetLeft
+      let position2 = document.querySelector('.parte-inferior').offsetTop + 124
+
+      //bug correction - It avoids the canvas line displace when the vertical scroll appears 
+      if (document.body.scrollHeight > (window.innerHeight - 155)) {
+        position1 += 10;
+      }
 
       lineH.fillStyle = lineColor;
       lineH.fillRect(0, position2, window.innerWidth, 2);
@@ -31,38 +39,46 @@ class App extends Component {
       lineH.fill();
 
       lineV.fillStyle = lineColor;
-      lineV.fillRect(position1 , 0, 2, window.innerHeight);
+      lineV.fillRect(position1, 0, 2, window.innerHeight);
 
       lineV.fill();
     }
 
     positionCanvas()
-
-
-    window.onresize = () => {
-      this.drawCanvas()
-    }
-
   }
 
+
+  onResize() {
+    this.drawCanvas();
+  }
+
+
   modalToggled(on) {
-    this.setState({modalOn: on});    
+    this.setState({ modalOn: on });
   }
 
 
   componentDidMount() {
     this.drawCanvas()
+    window.addEventListener('resize', this.onResize)
+
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize)
+    window.removeEventListener('onscroll', this.onScroll)
+  }
 
   render() {
     return (
       <div>
-        <canvas id="canvas"></canvas>       
+        <canvas id="canvas"></canvas>
         <div className="wrapper-all">
-          <Coluna1 />
-          <Coluna2 />
+          <Column1 />
+          <Column2 />
+          <FooterMobile />
         </div>
+
       </div>
     )
   }

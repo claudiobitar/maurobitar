@@ -1,11 +1,11 @@
 import React from 'react'
+import UpdateInfo from './UpdateInfo'
 
 const Footer = (props) => {
   return (
    <div className="footer">
      <div className="area-texto">
-       desenvolvido por Claudio Bitar<br/>
-       última atualização: 10/07/2018
+       <UpdateInfo/>
     </div>
    </div>
   )

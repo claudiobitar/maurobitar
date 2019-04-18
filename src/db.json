@@ -1,0 +1,363 @@
+{
+  "portfolioIntro": [
+    {
+      "text": [
+        "Apresento aqui uma seleção dos trabalhos que fiz a partir de 1993. São mostrados os desenhos que foram sendo feitos para cada encomenda.",
+        "Em 'estudos' estão alguns desenhos que faço em momentos de devaneio. Um ou outro, que por algum motivo me agradou um pouco mais, foi guardado. Os fundamentos que utilizo para projetar vêm de fontes diversas e estão sempre sendo elaborados e atualizados. Quanto a eles, prefiro não ter muitas certezas."
+      ]
+    }
+  ],
+  "houses": [
+    {
+      "id": 1,
+      "name": "Reforma de casa na Gávea, 1998",
+      "text": [
+        "A casa, do início do séc. XX fica na testada do lote. Na parte de trás ela se abre para um bonito jardim onde existe uma jaqueira frondosa. Na fachada fizemos uma vedação ao ruído da rua deixando entrar uma luz filtrada para a sala que se encontra ali. A ventilação se faz pela circulação do ar que entra, fresco, pelo vão da escada que vem do porão e sai, por cima, pela mansarda que criamos no telhado."
+      ],
+      "photos": [
+        "reforma_gavea_01",
+        "reforma_gavea_02",
+        "reforma_gavea_03",
+        "reforma_gavea_04"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Edícula em casa no Leblon, 1998",
+      "text": [
+        "No fundo do lote da casa foi construída uma edícula anexa à outra, existente. Esta parte nova abriga uma galeria de arte, em baixo, e um escritório em cima. Há também, uma garagem para dois automóveis, que, quando não está sendo usada se transforma em um pátio, e uma lavanderia, em cima, voltada para trás."
+      ],
+      "photos": [
+        "edicula_leblon_01",
+        "edicula_leblon_02",
+        "edicula_leblon_03",
+        "edicula_leblon_04",
+        "edicula_leblon_05"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Casa em Teresópolis, 1998",
+      "text": [
+        "O terreno apresentado, de forma mais ou menos quadrada e em declive em relação à rua, já havia sofrido modificações. Havia sido feito um corte na diagonal, que gerou duas áreas triangulares, uma, na parte de cima com o caimento original e a outra, em baixo, plana. A casa se desenvolve em meios pisos se acomodando a essa topografia."
+      ],
+      "photos": [
+        "tere_01",
+        "tere_08",
+        "tere_07",
+        "tere_04",
+        "tere_06",
+        "tere_03",
+        "tere_02",
+        "tere_05",
+        "tere_09",
+        "tere_10",
+        "tere_11"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Casa em Vargem Grande, 1999",
+      "text": [
+        "OBS: ver como inserir aspas duplas. O terreno tem uma parte plana, uma parte em declive, a mais ou menos 30°, e uma outra parte plana, em cima. A casa se desenvolve acompanhando o aclive. Uma escada que segue sempre em frente, subindo, 'alimenta' os ambientes que se posicionam à direita de quem sobe. À esquerda dela existe uma faixa destinada a um futuro plano inclinado eletromecânico. As áreas planas do terreno ficam disponíveis para o lazer ou para o cultivo de plantas."
+      ],
+      "photos": [
+        "vargemgrande_02",
+        "vargemgrande_01",
+        "vargemgrande_07",
+        "vargemgrande_04",
+        "vargemgrande_03",
+        "vargemgrande_05",
+        "vargemgrande_06"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Reforma de casa na Urca, 2003",
+      "text": [
+        "Como a casa é tombada pela prefeitura, quanto ao exterior nosso cuidado foi o de restauro. O interior foi todo demolido e refeito com nova distribuição, materiais e aspecto contemporâneos."
+      ],
+      "photos": [
+        "reforma_urca_01",
+        "reforma_urca_02",
+        "reforma_urca_03"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Casa em Teresópolis, 2003",
+      "text": [
+        "O terreno tem uma parte plana, estreita e comprida, tendo à direita, de quem olha da rua, um talude em aclive. A casa se desenvolve na parte plana, mais ou menos paralela ao talude. Contra este ela apresenta uma fachada com poucos vãos. Atrás dela está o sistema de circulação da casa. A fachada oposta a essa tem vãos mais generosos, oferecendo o desfrute da bonita paisagem."
+      ],
+      "photos": [
+        "casa_tere02_03",
+        "casa_tere02_04",
+        "casa_tere02_01",
+        "casa_tere02_02",
+        "casa_tere02_06",
+        "casa_tere02_05"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Reforma de casa em Teresópolis, 2009",
+      "text": [
+        "Na casa simples, um só piso e telhado de duas águas, fizemos um pequeno mezanino sobre o quarto do casal. O acesso é feito através de uma escada de marinheiro. A escada, as proporções do ambiente e os elementos em madeira, sugerem o interior de um barco. Um cantinho sossegado onde se pode ficar trabalhando e olhar, de vez em quando, para a bonita paisagem de montanha lá fora."
+      ],
+      "photos": [
+        "reforma_tere_01",
+        "reforma_tere_02",
+        "reforma_tere_03",
+        "reforma_tere_04"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Pavilhão no Jardim, Gávea, 2009",
+      "text": [
+        "A casa onde se situa essa pequena edícula é voltada para os fundos do lote onde há uma varanda generosa e um belo jardim. Onde era a piscina foi feito esse pequeno pavilhão. O que era sauna se tornou um banheiro. O pavilhão está encostado ao muro atrás do qual, lá em baixo, passa um bucólico riozinho."
+      ],
+      "photos": [
+        "pavilhao_gavea_01",
+        "pavilhao_gavea_02",
+        "pavilhao_gavea_03",
+        "pavilhao_gavea_05"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Duas Casas em Japerí, 2017",
+      "text": [
+        "Das conversas ao redor de uma mesa, o café quentinho, no final da tarde, surgiu a ideia do projeto para as duas casas. A casa M, com frente do lote estreita, é voltada para o lote ao lado, um quintal da família. A casa A também é voltada para o lado - no caso, fugindo dos olhares da família - para o prisma ao longo de toda ela, entre a casa e o muro do vizinho. No prisma, anexa ao volume da casa, a escada, o acesso ao segundo pavimento."
+      ],
+      "photos": [
+        "casa_japeri_01",
+        "casa_japeri_02",
+        "casa_japeri_03"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Casas não construídas",
+      "text": [
+        "Alguns projetos ficam apenas no papel. Por um motivo ou outro não seguem adiante e não se realizam como objeto no mundo dos sentidos. Ficam como possibilidades, lugares habitados pela imaginação..."
+      ],
+      "photos": [
+        "casas_nconstruidas_07",
+        "casas_nconstruidas_02",
+        "casas_nconstruidas_01",
+        "casas_nconstruidas_03",
+        "casas_nconstruidas_04",
+        "casas_nconstruidas_06",
+        "casas_nconstruidas_05",
+        "casas_nconstruidas_08"
+      ]
+    }
+  ],
+  "interiors": [
+    {
+      "header": [
+        "Interiores"
+      ],
+      "modalLinkText": [
+        "sobre os projetos"
+      ],
+      "text": [
+        "No espaço gerado pela construção dispomos os equipamentos necessários para o nosso conforto. Os móveis onde nos sentamos, aqueles de apoio,  aqueles para se guardar os utensílios. Temos  também os equipamentos de iluminação e de ar  condicionado. Fazer com isso uma composição plástica de forma, cor e proporções. Imaginar percursos,  criar um abrigo."
+      ],
+      "photos": [
+        "int_00",
+        "int_01",
+        "int_02",
+        "int_03",
+        "int_04",
+        "int_05",
+        "int_06",
+        "int_07",
+        "int_08",
+        "int_09",
+        "int_10",
+        "int_11",
+        "int_12",
+        "int_13",
+        "int_14",
+        "int_15",
+        "int_16",
+        "int_17",
+        "int_18",
+        "int_19",
+        "int_20",
+        "int_21",
+        "int_22",
+        "int_23",
+        "int_24",
+        "int_25",
+        "int_26",
+        "int_27",
+        "int_28",
+        "int_29",
+        "int_30",
+        "int_31",
+        "int_32",
+        "int_33",
+        "int_34",
+        "int_35",
+        "int_36",
+        "int_37",
+        "int_38",
+        "int_39",
+        "int_40",
+        "int_41",
+        "int_42",
+        "int_43",
+        "int_44",
+        "int_45",
+        "int_46",
+        "int_47",
+        "int_48"
+      ]
+    }
+  ],
+  "furnitures": [
+    {
+      "header": [
+        "Móveis"
+      ],
+      "modalLinkText": [
+        "sobre os projetos"
+      ],
+      "text": [
+        "Nos ambientes que componho sempre uso elementos de marcenaria desenhados por mim para esses locais. São mesas, mesinhas, estantes, aparadores, cômodas e camas. Procuro fazer com que, além de atenderem ao uso a que se destinam, tenham alguma coisa plástico-escultural. Não é isso a arquitetura?"
+      ],
+      "photos": [
+        "moveis_00",
+        "moveis_01",
+        "moveis_02",
+        "moveis_03",
+        "moveis_04",
+        "moveis_05",
+        "moveis_06",
+        "moveis_07",
+        "moveis_08",
+        "moveis_09",
+        "moveis_10",
+        "moveis_11",
+        "moveis_12",
+        "moveis_13",
+        "moveis_14",
+        "moveis_15",
+        "moveis_16",
+        "moveis_17",
+        "moveis_18",
+        "moveis_19",
+        "moveis_20",
+        "moveis_21",
+        "moveis_22",
+        "moveis_23",
+        "moveis_24",
+        "moveis_25",
+        "moveis_26"
+      ]
+    }
+  ],
+  "studies": [
+    {
+      "header": [
+        "Estudos"
+      ],
+      "modalLinkText": [
+        "sobre os desenhos"
+      ],
+      "text": [
+        "O desenho, como um exercício da imaginação, é um hábito cotidiano. Um ou outro, que por algum motivo me agradou um pouco mais, vai sendo guardado em uma pasta. Às vezes, tempos depois,  tenho a oportunidade de usar alguma coisa neles esboçada.",
+        "Incluo aqui, também, alguns desenhos de observação que, de vez enquando, me dá vontade de fazer. Não deixam de ser, além do registro de um momento, de algum modo, um estudo de arquitetura."
+      ],
+      "photos": [
+        "estudos_01",
+        "estudos_02",
+        "estudos_03",
+        "estudos_04",
+        "estudos_05",
+        "estudos_06",
+        "estudos_07",
+        "estudos_08",
+        "estudos_09",
+        "estudos_10",
+        "estudos_11",
+        "estudos_12",
+        "estudos_13",
+        "estudos_14",
+        "estudos_15",
+        "estudos_16",
+        "estudos_17",
+        "estudos_18",
+        "estudos_19",
+        "estudos_20",
+        "estudos_21",
+        "estudos_22"
+      ]
+    }
+  ],
+  "cronology": [
+    {
+      "projects": [
+        "1994  estudo para casa em Itaipava",
+        "1995  desenho de mobiliário para apartamento  em Botafogo",
+        "1996  estudo para divisória em escola no Jardim Botânico",
+        "1997  reforma de apartamento no Jardim Botânico",
+        "1997  mobiliário para sala em Copacabana",
+        "1998  reforma de casa na Gávea",
+        "1998  interiores e mobiliário de apartamento no Leblon",
+        "1998  edícula em casa no Leblon",
+        "1998  casa em Teresópolis",
+        "1999  mobiliário para apartamento no Recreio dos Bandeirantes",
+        "1999  casa em Vargem Grande",
+        "2000  estudo para casa em Campo Grande",
+        "2000  estudo para casa em Araras",
+        "2000  reforma e mobiliário em apartamento em Copacabana",
+        "2001  mobiliário para quarto em Ipanema",
+        "2002  mansarda em apartamento na Gávea",
+        "2003  reforma de casa na Urca",
+        "2003  estudo para interiores de escritório de advogados, Centro",
+        "2003  reforma e mobiliário de apartamento no Flamengo",
+        "2003  casa em Teresópolis",
+        "2003  loja no Barra Shopping, Barra da Tijuca",
+        "2003  reforma e mobiliário de apartamento no Leblon",
+        "2003  mobiliário para escritório em apartamento no Flamengo",
+        "2004  reforma de apartamento na Gávea",
+        "2004  estudo para reforma de casa em Charitas",
+        "2005  estudo para casa em Itaipava",
+        "2005  interior e mobiliário para sala em apartamento na Gávea",
+        "2006  interior e mobiliário para sala de apartamento em Ipanema",
+        "2006  estudo para casa em Itaipava",
+        "2007  interiores e mobiliário de apartamento em Botafogo",
+        "2007  interiores e mobiliário de apartamento no Flamengo",
+        "2008  interior de consultório médico em Botafogo",
+        "2009  estudo para reforma de casa em Teresópolis",
+        "2009  reforma de casa em Teresópolis",
+        "2009  pavilhão no jardim, Gávea",
+        "2009  estudo para mobiliário em apartamento em Laranjeiras",
+        "2009  mobiliário para quarto no Flamengo",
+        "2010  mobiliário para apartamento no Leblon",
+        "2010  reforma e mobiliário em apartamento em Botafogo",
+        "2010  reforma e mobiliário em apartamento na Gávea",
+        "2011  interiores e mobiliário de apartamento na Fonte da Saudade",
+        "2011  reforma de apartamento no Bairro Peixoto",
+        "2011  interiores e mobiliário de apartamento em Botafogo",
+        "2011  reforma de apartamento no Jardim Botânico",
+        "2012  interiores e mobiliário em apartamento no Largo dos Leões",
+        "2012  loja em Larangeiras",
+        "2013  reforma de apartamento em Copacabana",
+        "2013  reforma e mobiliário em apartamento no Flamengo",
+        "2014  escritório no Conjunto Nova América",
+        "2015  reforma em apartamento no Horto",
+        "2015  estudo para conjunto de 12 casas em Irajá",
+        "2015  reforma de apartamento na Tijuca",
+        "2016  reforma de apartamento em Laranjeiras",
+        "2017  duas casas em Japerí",
+        "2017  reforma e mobiliário em apartamento em Ipanema",
+        "2018  reforma e mobiliário em apartamento no Flamengo"
+      ]
+    }
+  ]
+}

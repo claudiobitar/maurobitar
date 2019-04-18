@@ -21,8 +21,9 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>Mauro Bitar - Arquiteto</title>
-  <script src="../src/js_plugins/prefixfree.min.js"></script>
-  <link href="simplelightbox-master/dist/simplelightbox.min.css" rel='stylesheet' type='text/css'>
+  <!---<script type="text/jsx" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->     
+  <!----<script type="text/jsx" src="simplelightbox-master/dist/simple-lightbox.js"></script>-->
+  
 </head>
 
 <body>
@@ -44,59 +45,8 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script type="text/javascript" src="simplelightbox-master/dist/simple-lightbox.min.js"></script>
-  <script>
-    $(function(){
-  
-  var $gallery = $('.gallery a').simpleLightbox();
-  
-  $gallery.on('show.simplelightbox', function(){
-    console.log('Requested for showing');
-  })
-  .on('shown.simplelightbox', function(){
-    console.log('Shown');
-  })
-  .on('close.simplelightbox', function(){
-    console.log('Requested for closing');
-  })
-  .on('closed.simplelightbox', function(){
-    console.log('Closed');
-  })
-  .on('change.simplelightbox', function(){
-    console.log('Requested for change');
-  })
-  .on('next.simplelightbox', function(){
-    console.log('Requested for next');
-  })
-  .on('prev.simplelightbox', function(){
-    console.log('Requested for prev');
-  })
-  .on('nextImageLoaded.simplelightbox', function(){
-    console.log('Next image loaded');
-  })
-  .on('prevImageLoaded.simplelightbox', function(){
-    console.log('Prev image loaded');
-  })
-  .on('changed.simplelightbox', function(){
-    console.log('Image changed');
-  })
-  .on('nextDone.simplelightbox', function(){
-    console.log('Image changed to next');
-  })
-  .on('prevDone.simplelightbox', function(){
-    console.log('Image changed to prev');
-  })
-  .on('error.simplelightbox', function(e){
-    console.log('No image found, go to the next/prev');
-    console.log(e);
-  });
-});
    
-   
-  </script>
-
-
+  
 </body>
 
 </html>

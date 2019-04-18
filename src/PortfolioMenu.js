@@ -1,39 +1,82 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
 import Intro from './Intro'
-import Casas from './Casas'
-import Interiores from './Interiores'
-import Moveis from './Moveis'
-import Estudos from './Estudos'
-import Cronologia from './Cronologia'
+import Houses from './Houses'
+import PortfolioPage from './PortfolioPage'
+import Cronology from './Cronology'
+
+var data = require('./db.json');
 
 class PortfolioMenu extends Component {
   constructor(props) {
     super(props)
-  
+    this.state = {
+      portfolioClass: "",
+      interiors: [],
+      furnitures: [],
+      studies: [],
+      houses: []
+    }
   }
-  render(){   
+
+  componentDidMount() {
+    this.setState({
+      interiors: data.interiors[0],
+      furnitures: data.furnitures[0],
+      studies: data.studies[0],
+      houses: data.houses
+    })
+  }
+
+  isActive = (match, location) => {
+    const { portfolioClass } = this.state;
+    const newClass = match ? "portfolio-menu-introjs" : "";
+    if (newClass !== portfolioClass)
+      this.setState({ portfolioClass: newClass });
+    return match;
+  };
+
+
+
+  render() {
+    const { portfolioClass } = this.state;
     return (
       <div>
         <Router>
-          <div class="wrapper2">
+          <div class={`wrapper2 ${portfolioClass}`}>
+            {/*<Router>
+          <div class={`wrapper2 ${portfolioClass}`}>
             <div class="wrapper-portfolio">
-              <Route exact path='/portfolio' render={() => <Intro />} />
-              <Route exact path='/portfolio/casas' render={() => <Casas />} />
-              <Route exact path='/portfolio/interiores' render={() => <Interiores />} />
-              <Route exact path='/portfolio/moveis' render={() => <Moveis />} />
-              <Route exact path='/portfolio/estudos' render={() => <Estudos />} />
-              <Route exact path='/portfolio/cronologia' render={() => <Cronologia/>} />
+             <Route exact path='/' component={Intro} />
+             <Route path='/portfolio/casas' component={Houses}/>      
             </div>
             <nav>
-              <ul className="portfolio-menu">
-                <li><NavLink activeClassName="active" exact to="/portfolio">• introdução</NavLink></li>
-                <li><NavLink activeClassName="active" exact to="/portfolio/casas">• casas</NavLink></li>
-                <li><NavLink activeClassName="active" exact to="/portfolio/interiores">• interiores</NavLink></li>
-                <li><NavLink activeClassName="active" exact to="/portfolio/moveis">• móveis</NavLink></li>
-                <li><NavLink activeClassName="active" exact to="/portfolio/estudos">• estudos</NavLink></li>
-                <li><NavLink activeClassName="active" exact to="/portfolio/cronologia">• cronologia</NavLink></li>
+              <ul className={`portfolio-menu ${portfolioClass}`}>
+                <li><NavLink exact to="/"><span className="bullet">•</span> introdução</NavLink></li>
+                <li><NavLink to="/portfolio/casas"><span className="bullet">•</span> casas</NavLink></li>
+
+              </ul>
+            </nav>
+          </div>
+            </Router>*/}  {/*<Route path='/portfolio/casas' component={()=><Houses data={this.state.houses} />} />*/}
+            <div class="wrapper-portfolio">
+              <Route exact path='/portfolio/casas' component={()=><Houses data={this.state.houses} />} />
+              <Route exact path='/interiores' render={() => <PortfolioPage data={this.state.interiors} />} />
+              <Route exact path='/moveis' render={() => <PortfolioPage data={this.state.furnitures} />} />
+              <Route exact path='/estudos' render={() => <PortfolioPage data={this.state.studies} />} />
+              <Route exact path='/cronologia' render={() => <Cronology />} />
+              <Route exact path='/portfolio/intro'  component={() => <Intro/>}/>
+  
+            </div>
+            <nav>
+              <ul className={`portfolio-menu ${portfolioClass}`}>
+                <li><NavLink activeClassName="active" isActive={this.isActive} to="/portfolio/intro"><span className="bullet">•</span> introdução</NavLink></li>
+                <li><NavLink activeClassName="active" exact to="/portfolio/casas"><span className="bullet">•</span> casas</NavLink></li>
+                <li><NavLink activeClassName="active" exact to="/interiores"><span className="bullet">• </span>interiores</NavLink></li>
+                <li><NavLink activeClassName="active" exact to="/moveis"><span className="bullet">• </span>móveis</NavLink></li>
+                <li><NavLink activeClassName="active" exact to="/estudos"><span className="bullet">• </span>estudos</NavLink></li>
+                <li><NavLink activeClassName="active" exact to="/cronologia"><span className="bullet">• </span>cronologia</NavLink></li>
               </ul>
             </nav>
           </div>
@@ -41,7 +84,7 @@ class PortfolioMenu extends Component {
       </div>
     )
   }
-  }
+}
 
 
 export default PortfolioMenu
