@@ -44,24 +44,9 @@ class PortfolioMenu extends Component {
     return (
       <div>
         <Router>
-          <div class={`wrapper2 ${portfolioClass}`}>
-            {/*<Router>
-          <div class={`wrapper2 ${portfolioClass}`}>
-            <div class="wrapper-portfolio">
-             <Route exact path='/' component={Intro} />
-             <Route path='/portfolio/casas' component={Houses}/>      
-            </div>
-            <nav>
-              <ul className={`portfolio-menu ${portfolioClass}`}>
-                <li><NavLink exact to="/"><span className="bullet">•</span> introdução</NavLink></li>
-                <li><NavLink to="/portfolio/casas"><span className="bullet">•</span> casas</NavLink></li>
-
-              </ul>
-            </nav>
-          </div>
-            </Router>*/}  {/*<Route path='/portfolio/casas' component={()=><Houses data={this.state.houses} />} />*/}
-            <div class="wrapper-portfolio">
-              <Route exact path='/portfolio/casas' component={()=><Houses data={this.state.houses} />} />
+          <div className={`wrapper2 ${portfolioClass}`}>           
+            <div className="wrapper-portfolio">
+              <Route exact path='/portfolio/casas' component={()=><Houses data={this.state.houses} />}/>
               <Route exact path='/interiores' render={() => <PortfolioPage data={this.state.interiors} />} />
               <Route exact path='/moveis' render={() => <PortfolioPage data={this.state.furnitures} />} />
               <Route exact path='/estudos' render={() => <PortfolioPage data={this.state.studies} />} />

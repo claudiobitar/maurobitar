@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 import Home from './Home';
 import Biografy from './Biografy';
 import Portfolio from './Portfolio';
+import PortfolioMenu from './PortfolioMenu'
 import Contact from './Contact';
+
 
 
 class MainMenu extends Component {
@@ -45,7 +47,7 @@ class MainMenu extends Component {
             </nav>
             <div className="page-content">         
               <Route exact path='/nota_biografica' render={() => <Biografy />} />
-              <Route exact path='/portfolio/intro' render={() => <Portfolio />}/>
+              <Route exact path='/portfolio/intro' render={() => <Portfolio />}/>           
               <Route exact path='/contato' render={() => <Contact />} />
               <Route exact path='/' render={() => <Home />} />
             </div>

@@ -7,12 +7,10 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.drawCanvas = this.drawCanvas.bind(this)
-    this.onResize = this.onResize.bind(this)
-  }
-
+    this.onResize = this.onResize.bind(this)    
+  }  
 
   drawCanvas() {
-
     const c = document.getElementById("canvas");
     const lineH = c.getContext("2d");
     const lineV = c.getContext("2d");
@@ -28,8 +26,8 @@ class App extends Component {
       let position1 = document.querySelector('.coluna2').offsetLeft
       let position2 = document.querySelector('.parte-inferior').offsetTop + 124
 
-      //bug correction - It avoids the canvas line displace when the vertical scroll appears 
-      if (document.body.scrollHeight > (window.innerHeight - 155)) {
+      //bug correction - It avoids the canvas line displace when the vertical scroll appears     
+      if (document.body.scrollHeight > (window.innerHeight - 128)) {
         position1 += 10;
       }
 

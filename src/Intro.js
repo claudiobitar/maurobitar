@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { noMoreLonelyWords } from './utilities/utilities.js';
 
 var data = require('./db.json');
 
@@ -16,21 +17,24 @@ class Intro extends Component {
     })
   }
 
+  componentDidUpdate() {
+    noMoreLonelyWords("p", 2)
+  }
+
   render() {
     return (
-      <div>     
-        <div class="portfolio-intro">
-          {this.state.text.map((t, index) => {
-            return (
-              <p class="texto-intro">
-                {t}
-              </p>
-            )
-          })}
-          <div>
-          </div>
+      <div className="portfolio-intro">
+        {this.state.text.map(t => {
+          return (
+            <p key={t} className="texto-intro">
+              {t}
+            </p>
+          )
+        })}
+        <div>
         </div>
       </div>
+
     )
   }
 }

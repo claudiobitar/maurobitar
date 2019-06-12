@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Modal from 'react-responsive-modal';
 import Lightbox from 'react-lightbox-component';
+import { noMoreLonelyWords } from './utilities/utilities.js';
 
 class PortfolioPage extends Component {
 
@@ -30,6 +31,10 @@ class PortfolioPage extends Component {
       resultText: this.props.data.text,
       resultModalLinkText: this.props.data.modalLinkText
     })
+  }
+
+  componentDidUpdate() {
+    noMoreLonelyWords("p", 2)
   }
 
   handleClick(event) {
@@ -119,13 +124,14 @@ class PortfolioPage extends Component {
     const renderImages = images && images.map((foto, index) => {
       return (
         {
-          src: `../images/${foto}.jpg`
+          src: `../images/${foto}`,
+          key: index
         }
       )
     })
 
     const decorativeImages =
-      currentItems && currentItems.map((img, index) => {
+      currentItems && currentItems.map((img) => {
         while (img === 'blank_space') {
           return (
             '../images/blank_space_img.jpg'
@@ -141,7 +147,7 @@ class PortfolioPage extends Component {
           <div>
             {resultText.map((text, index) => {
               return (
-                <p>
+                <p key={text}>
                   {text}
                 </p>
               )
@@ -156,21 +162,19 @@ class PortfolioPage extends Component {
         <div>
           <div className="gallery images-box-1 big">
             <Lightbox images={renderImages} />
-            {decorativeImages && decorativeImages.map(img => (
-              <dvi>
-                <img src={img} />
-              </dvi>
+            {decorativeImages && decorativeImages.map((img, index) => (
+              <img key={index} src={img} />
             ))}
           </div>
           <div className="page-numbers-container">
             {(this.state.currentPage > 1) &&
-              <a className="prev-button" onClick={this.handleClickPrev}>&lt;</a>
+              <a href='javascript:;' className="prev-button" onClick={this.handleClickPrev}>&lt;</a>
             }
             <ul className="page-numbers">
               {renderPageNumbers}
             </ul>
             {(this.state.currentPage < this.state.resultPhotos.length / this.state.itemsPerPage) &&
-              <a className="next-button" onClick={this.handleClickNext}>&gt;</a>
+              <a href='javascript:;' className="next-button" onClick={this.handleClickNext}>&gt;</a>
             }
           </div>
         </div>

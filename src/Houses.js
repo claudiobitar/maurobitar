@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Modal from 'react-responsive-modal';
 import Lightbox from 'react-lightbox-component';
+import { noMoreLonelyWords } from './utilities/utilities.js';
 
 class Houses extends Component {
 
@@ -33,6 +34,10 @@ class Houses extends Component {
     })
   }
 
+  componentDidUpdate() {
+    noMoreLonelyWords("p", 2)
+  }
+
   handleClick(event) {
     this.state.currentHouse &&
       this.setState({
@@ -61,7 +66,6 @@ class Houses extends Component {
         index: this.state.index += 1,
         currentPhotoPage: Number(1)
       });
-      console.log('executou o handleClickNext')
     } else {
       event.preventDefault()
     }
@@ -79,7 +83,6 @@ class Houses extends Component {
       this.setState({
         currentPhotoPage: Number(this.state.currentPhotoPage + 1)
       });
-      console.log('executou o handleClickNext2')
     } else {
       event.preventDefault()
     }
@@ -91,7 +94,6 @@ class Houses extends Component {
       this.setState({
         currentPhotoPage: Number(this.state.currentPhotoPage - 1)
       });
-      console.log('executou o handleClickPrev2')
     }
     else {
       event.preventDefault()
@@ -190,7 +192,7 @@ class Houses extends Component {
     const renderImages = images && images.map((photo, index) => {
       return (
         {
-          src: `../images/${photo}.jpg`
+          src: `../images/${photo}`
         }
       )
     })
@@ -210,16 +212,14 @@ class Houses extends Component {
         <button className="button" onClick={this.onOpenModal}>• sobre o projeto</button>
         <Modal open={this.state.open} onClose={this.onCloseModal} onExited={this.onExited} top>
           <div>
-            <p>
-              {currentHouse && currentHouse[index] && currentHouse[index].text.map((t, index) => {
-                return (
-                  <p>
-                    {t}
-                  </p>
-                )
-              })
-              }
-            </p>
+            {currentHouse && currentHouse[index] && currentHouse[index].text.map((t) => {
+              return (
+                <p key={t}>
+                  {t}
+                </p>
+              )
+            })
+            }
           </div>
         </Modal>
         <br />
@@ -229,17 +229,17 @@ class Houses extends Component {
 
         <div>
           {/* Internal pagination*/}
-          <div class="internal-pagination">
+          <div className="internal-pagination">
             {currentHouse && currentHouse[index] && currentHouse[index].photos.length > photosPerPage &&
               <div className="page-numbers-container">
                 {(this.state.currentPhotoPage > 1) &&
-                  <a className="prev-button" onClick={this.handleClickPrev2}>&lt;</a>
+                  <a href='javascript:;' className="prev-button" onClick={this.handleClickPrev2}>&lt;</a>
                 }
                 <ul className="page-numbers">
                   {renderPageNumbers2}
                 </ul>
                 {(indexOfFirstPhoto < currentHouse[index].photos.length / photosPerPage) &&
-                  <a className="next-button" onClick={this.handleClickNext2}>&gt;</a>
+                  <a href='javascript:;' className="next-button" onClick={this.handleClickNext2}>&gt;</a>
                 }
               </div>
             }
@@ -253,10 +253,8 @@ class Houses extends Component {
                 : null
             }
 
-            {decorativeImages && decorativeImages.map(img => (
-              <dvi>
-                <img src={img} />
-              </dvi>
+            {decorativeImages && decorativeImages.map((img, index) => (
+              <img key={index} src={img} />
             ))}
 
           </div>
@@ -264,17 +262,17 @@ class Houses extends Component {
           {/* External pagination*/}
           <div className="page-numbers-container">
             {(this.state.currentPage > 1) &&
-              <a className="prev-button" onClick={this.handleClickPrev}>&lt;</a>
+              <a href='javascript:;' className="prev-button" onClick={this.handleClickPrev}>&lt;</a>
             }
             <ul className="page-numbers">
               {renderPageNumbers}
             </ul>
             {(this.state.currentPage < this.state.totalHouses) &&
-              <a className="next-button" onClick={this.handleClickNext}>&gt;</a>
+              <a href='javascript:;' className="next-button" onClick={this.handleClickNext}>&gt;</a>
             }
           </div>
         </div>
-       </div>
+      </div>
     )
   }
 
